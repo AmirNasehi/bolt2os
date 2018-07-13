@@ -17,6 +17,7 @@
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
     "react-loader": "^2.4.5",
+    "react-particles-js": "^2.2.0",
     "react-redux": "^5.0.6",
     "react-responsive-table": "^2.0.15",
     "react-style-proptype": "^3.2.1",

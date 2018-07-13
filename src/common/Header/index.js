@@ -11,10 +11,10 @@ export default class Header extends React.Component {
                     <Link to="/home/dashboard">Dashboard</Link>
                     <Link to="/home/dashboard">Contact US</Link>
                     <Link to="/">Sign Out</Link>
-                    <Button className="download-btn" href="/create">
+                    {/* <Button className="download-btn" href="/create">
                         <img className="logo-download" src="/assets/img/download.png" alt="" />
                         Download
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
         )

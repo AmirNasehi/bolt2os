@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Footer from "common/Footer";
+import Particles from 'react-particles-js';
 import { Button, Row, Col, FormControl, Checkbox } from "react-bootstrap";
 
 class Login extends Component {
@@ -14,6 +15,24 @@ class Login extends Component {
 
         return (
             <div className="login">
+             <Particles 
+              params={{
+            		particles: {
+            			line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "#3CA9D1",
+            					blur: 5
+            				}
+            			}
+            		}
+            	}}
+              style={{
+                width: '100%',
+                position: 'relative'
+                // backgroundImage: `url(${logo})` 
+              }}
+            />
                 <div className="login-header">
                     <img className="logo" src="/assets/img/green-logo.jpg" alt="" />
                     <div className="right-side__header">

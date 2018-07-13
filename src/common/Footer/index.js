@@ -19,10 +19,10 @@ export default class Footer extends React.Component {
 						<div className="col-box">
 							<p className="footer-title">Connnect</p>
 							<div>
-								<img className="logo" src="/assets/img/instagram.png" alt="" />
-								<img className="logo" src="/assets/img/twitter.png" alt="" />
-								<img className="logo" src="/assets/img/facebook.png" alt="" />
-								<img className="logo" src="/assets/img/linkedin.png" alt="" />
+								<a href="https://www.instagram.com"><img className="logo" src="/assets/img/instagram.png" alt="" /></a>
+								<a href="https://twitter.com/"><img className="logo" src="/assets/img/twitter.png" alt="" /></a>
+								<a href="https://facebook.com/"><img className="logo" src="/assets/img/facebook.png" alt="" /></a>
+								<a href="https://linkedin.com/"><img className="logo" src="/assets/img/linkedin.png" alt="" /></a>
 							</div>
 						</div>
 					</div>

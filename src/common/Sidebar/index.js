@@ -38,7 +38,7 @@ export default class Sidebar extends React.Component {
 							<p className="side-title">Mining Profile</p>
 						</Link>
 					</li>
-					{/* <li className="side-li">
+					<li className="side-li">
 						<Link to="/home/miningprofile">
 							<div className="logo-mining" />
 							<NavDropdown eventKey={3} title="Mining Profile" id="basic-nav-dropdown">
@@ -48,7 +48,7 @@ export default class Sidebar extends React.Component {
 								<MenuItem eventKey={3.4}><p>Show All</p></MenuItem>
 							</NavDropdown>
 						</Link>
-					</li> */}
+					</li>
 				</ul>
 			</nav>
 		)
