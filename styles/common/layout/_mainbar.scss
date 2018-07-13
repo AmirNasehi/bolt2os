@@ -1,0 +1,21 @@
+.mainbar {
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    float: right;
+    margin-top: 78px;
+    @include viewport(small) {
+        width: calc(100vw - 300px);
+    }
+    @media screen and (max-width:767px) {
+        padding-top: 27%;
+    }
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}

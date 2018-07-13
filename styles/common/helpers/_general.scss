@@ -1,0 +1,319 @@
+// .container {
+//     max-width: 1300px;
+//     width: 100%;
+// }
+@include viewport(large) {
+    .sm-container {
+        width: 800px;
+        padding-left: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .lg-container {
+        padding: 30px 50px;
+    }
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.img-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.img-contain {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.sm-title {
+    font-size: 11px;
+}
+
+.text-bold {
+    font-family: $bold;
+}
+
+.text-thin {
+    font-family: $light;
+}
+
+.text-navy {
+    color: $dark_blue;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.main {
+    float: right;
+    min-height: 100vh;
+    height: 100%;
+    margin-right: 300px;
+    height: calc(100% - 50px);
+    @include viewport(small) {
+        width: calc(100% - 300px);
+    }
+}
+
+.btn-default {
+    border-radius: 0;
+    border: none;
+}
+
+.form-control {
+    margin: 5px 0 10px;
+    height: 40px;
+}
+
+.control-label {
+    color: $black;
+}
+
+.more-information a {
+    color: $blue;
+}
+
+.create-btn {
+    padding: 10px;
+    color: #474747;
+    background-color: $light-green;
+    border: $light-green;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $light-green;
+        border: $light-green;
+    }
+}
+
+.download-btn {
+    @extend .create-btn;
+    padding: 5px 10px;
+    background-color: $yellow;
+    background-color: $yellow;
+    border-color: $yellow;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $dark-yellow;
+        border-color: #d39e00;
+    }
+}
+
+.gray-btn {
+    background-color: $dark-gray;
+    border: $dark-gray;
+    color: $white;
+    padding: 8px 10px;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #5a6268;
+        border-color: #545b62;
+        color: $white;
+    }
+}
+
+.yellow-btn {
+    @extend .gray-btn;
+    background-color: $yellow;
+    background-color: $yellow;
+    border-color: $yellow;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $dark-yellow;
+        border-color: #d39e00;
+    }
+}
+
+.green-btn {
+    @extend .gray-btn;
+    background-color: $green-btn;
+    border: $green-btn;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+}
+
+.black-btn {
+    @extend .gray-btn;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $dark-gray;
+        border-color: $dark-gray;
+    }
+}
+
+.red-btn {
+    @extend .gray-btn;
+    background-color: $red;
+    border: $red;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $dark-red;
+        border-color: #bd2130;
+    }
+}
+
+.lightgray-btn {
+    @extend .gray-btn;
+    background-color: #6c757d;
+    border: #6c757d;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .half-width {
+        margin: 5px 0;
+        width: 48%;
+    }
+    .complete-width {
+        margin: 5px 0;
+        width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.title-page {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    color: $green;
+    font-weight: 100;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+}
+
+.pagination-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.btn-pagination {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-style: 14px;
+    color: #6c757d;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent;
+    }
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: $dark-gray;
+}
+
+.general-table {
+    th {
+        width: 1%;
+        color: $black;
+        font-size: 13px;
+        font-weight: bold;
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:last-child {
+            width: 2%;
+        }
+    }
+    td {
+        font-size: 13px;
+        padding: 10px 0;
+        color: $dark-gray;
+        border-bottom: 1px solid $border-color;
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:nth-child(2) {
+            color: $blue;
+        }
+    }
+    .title-table thead {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .table-bordered>thead>tr>th {
+        border: none;
+        border-bottom: 1px solid $border-color;
+    }
+    .table-bordered>tbody>tr>td {
+        border: none;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+//loader styles for result boxes
+.loader {
+    color: '#fff';
+    @include position-scale(absolute, 0, 0, 0, 0);
+    background-color: rgba(14, 14, 14, 0.46);
+}
+
+//text that appears before loading results
+.pre-content {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.version {
+    font-weight: bold;
+}

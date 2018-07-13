@@ -1,0 +1,92 @@
+.login {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00bfa5; // background-image: url(base.css);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    &-content {
+        min-height: 100vh;
+        margin: 20px 0;
+        padding-top: 15%;
+    }
+    &-title {
+        font-family: 'Roboto';
+        color: $white;
+        padding: 15px 0;
+        font-size: 4rem;
+        border-bottom: 1px solid $white;
+    }
+    .second-title {
+        color: $dark-gray;
+        padding: 10px 0;
+        font-weight: 100;
+        font-size: 3.5rem;
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .light-text {
+        color: #f8f9fa;
+        font-weight: 100;
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 10px;
+    }
+    .text-box {
+        padding-right: 4rem;
+    }
+    .login-box {
+        background: #fff;
+        padding: 2.5em 1.5em 1.5em;
+        margin-left: 4rem;
+        border-radius: 3px;
+        box-shadow: 0 0 3em #898989;
+        .h4 {
+            color: $green;
+        }
+        .second-txt {
+            color: #696969;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $border-color;
+        }
+        .forgot-txt {
+            text-align: center;
+            p {
+                color: $blue;
+                font-size: 12px;
+            }
+        }
+        .checkbox {
+            margin-bottom: 0;
+            label {
+                color: $dark-gray;
+            }
+        }
+        .small,
+        small {
+            font-size: 73%;
+            color: $dark-gray;
+        }
+        .signin-btn {
+            background-color: $dark-gray;
+            color: $white;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width:990px){
+        .login-box {
+            margin: 40px 0;
+        }
+    }
+    @media screen and (max-width:767px){
+        .login-content{
+            padding-top: 27%;
+        }
+    }
+}

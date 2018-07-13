@@ -1,0 +1,49 @@
+.login-header {
+    @include position_scale(fixed, 0, 0, auto, 0);
+    z-index: 999;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    box-shadow: 0em 0em 3em 0em #8e8e8e;
+    .logo {
+        width: 80px;
+    }
+    .right-side__header {
+        a {
+            margin: 0 10px;
+            @media screen and (max-width: 767px) {
+                margin: 20px 10px;
+            }
+        }
+    }
+}
+.logo-download{
+    width: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.header{
+    @extend .login-header;
+    .right-side__header a{
+        &:first-child{
+            background-color: $dark-gray;
+            padding: 5px 10px;
+            color: $white;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .right-side__header {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .login-header {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

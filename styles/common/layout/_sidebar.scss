@@ -1,0 +1,79 @@
+.sidebar {
+    padding: 5rem 0;
+    width: 260px;
+    margin-top: 78px;
+    min-height: 100%;
+    /* height: calc(100% - 50px); */
+    background: $light-gray;
+    text-transform: capitalize;
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    .logo-dashboard {
+        @extend .img-cover;
+        background-image: url(/assets/img/home.png);
+        background-size: 80%;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-bottom: 7px;
+    }
+    .logo-profile {
+        @extend .img-cover;
+        background-image: url(/assets/img/users.png);
+        background-size: 85%;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-bottom: 7px;
+    }
+    .logo-pools {
+        @extend .img-cover;
+        background-image: url(/assets/img/bars.png);
+        background-size: 80%;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-bottom: 7px;
+    }
+    .logo-mining {
+        @extend .img-cover;
+        background-image: url(/assets/img/layers.png);
+        background-size: 80%;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+    }
+    .plus {
+            width: 17px;
+    }
+    .side-li {
+        width: 100%;
+        padding: 8px 40px;
+        a {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            color: $text-color;
+            font-size: 16px;
+            &:hover {
+                color: $text-hover;
+            }
+        }
+    }
+    .data-txt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 73%;
+        margin: 30px auto 10px;
+        p{
+            font-weight: 100;
+        }
+    }
+    .edit-img{
+        margin-left: 5px;
+    }
+}

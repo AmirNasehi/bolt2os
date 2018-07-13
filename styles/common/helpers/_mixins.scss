@@ -1,0 +1,53 @@
+$breakpoints: ("tiny": 480px, "small": 768px, "medium": 992px, "large": 1280px, "extra": 1920px);
+@mixin viewport($size, $base: up) {
+    $range: map-get($breakpoints, $size);
+    @if $range !=null {
+        @if $base==up {
+            @media only screen and (min-width: nth($range, 1)) {
+                @content;
+            }
+        }
+        @else {
+            @media only screen and (min-width: nth($range, 1)) and (max-width: nth($range, 2)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint,
+    $fs-font-size in $fs-map {
+        @if $fs-breakpoint==null {
+            @include make-font-size($fs-font-size);
+        }
+        @else {
+            @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+                $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+            }
+            @media screen and (min-width: $fs-breakpoint) {
+                @include make-font-size($fs-font-size);
+            }
+        }
+    }
+}
+
+@mixin make-font-size($fs-font-size) {
+    @if type-of($fs-font-size)=="list" {
+        font-size: nth($fs-font-size, 1);
+        @if (length($fs-font-size)>1) {
+            line-height: nth($fs-font-size, 2);
+        }
+    }
+    @else {
+        font-size: $fs-font-size;
+    }
+}
+
+@mixin position-scale($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

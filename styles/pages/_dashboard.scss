@@ -1,0 +1,132 @@
+.dashboard {
+    padding: 20px 10px;
+    .filter {
+        &-box {
+            background-color: $light-gray;
+            margin: 20px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        &-txt {
+            font-family: 'Open Sans', sans-serif;
+            color: $dark-gray;
+            font-weight: 100;
+            width: 10%;
+            @media screen and (max-width: 767px) {
+                // width: 100%;
+            }
+        }
+        &-inf {
+            display: flex;
+            flex-direction: row; // justify-content: center;
+            align-items: center;
+            width: 90%;
+            p {
+                color: $dark-gray;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        &-select {
+            width: 30%;
+        }
+    }
+    .search-box {
+        @extend .filter-box;
+        margin-bottom: 0;
+        background-color: $white;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+        border-top: 1px solid $border-color;
+        .filter-txt {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .filter-inf {
+            width: 37%;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        .form-control {
+            margin-bottom: 0;
+        }
+        .gray-btn {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+    }
+    .btn-box {
+        margin-left: 20px;
+        .btn {
+            margin-right: 5px;
+        }
+    }
+    .green-btn,
+    .gray-btn,
+    .black-btn,
+    .yellow-btn,
+    .red-btn {
+        margin-left: 3px;
+    }
+    .page-box {
+        margin-right: 30px;
+    }
+    .table-btn {
+        display: flex;
+        border: none;
+        &:first-child {
+            border-top: 0
+        }
+    }
+    .table-striped>tbody>tr {
+        border-bottom: 1px solid #ddd;
+    }
+    .general-table {
+        .table>thead>tr>th {
+            vertical-align: middle;
+            padding: 0 20px;
+        }
+    }
+}
+
+// Modal
+.modal-box {
+    padding: 1.5em;
+    border-radius: 3px;
+    box-shadow: 0 0 1em #d4d4d4;
+    .row-modal {
+        border-bottom: 1px solid $border-color;
+        padding: 5px 0;
+    }
+    .simple-input {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 5px 0;
+        border-bottom: 1px solid $border-color;
+    }
+    .table-modal {
+        margin: 10px 0;
+    }
+    .bottom-box {
+        padding: 10px 0;
+        th {
+            border: none;
+            color: $black;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        td {
+            border: none;
+        }
+        .table-input {
+            margin: 0;
+            height: 35px;
+            text-align: center;
+            border: 1px solid $dark-gray;
+        }
+    }
+}

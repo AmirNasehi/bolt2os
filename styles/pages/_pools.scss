@@ -1,0 +1,113 @@
+.pools {
+    padding: 20px 10px;
+    .bitcoin-img {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 2px;
+        margin-right: 5px;
+    }
+    td {
+        &:nth-child(2) {
+            color: $dark-gray;
+        }
+    }
+    .btn {
+        margin-right: 5px;
+    }
+    .chart {
+        padding: 10px;
+        margin-bottom: 20px;
+        p {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 100;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .cirecle-chart-img {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+        }
+        .chart-img {
+            width: 50px;
+            height: 50px;
+            margin: auto;
+        }
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            min-height: 200px;
+            border: 1px solid $border-color;
+        }
+    }
+    .gray-box {
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        text-align-last: left;
+        font-size: 20px;
+        font-weight: 100;
+        color: $white;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: $dark-gray;
+    }
+}
+
+.mining{
+    @extend .pools;
+    .general-table{
+        .table-condensed>tbody>tr>td{
+            padding: 10px 20px;
+        }
+    }
+}
+
+// Edit
+.edit {
+    width: 45%;
+    .btn-bottom {
+        text-align: right;
+    }
+    .table>tbody>tr>td,
+    .table>tbody>tr>th {
+        vertical-align: middle;
+    }
+    .td {
+        padding: 5px 0;
+    }
+    .general-table {
+        margin: 20px 0;
+        border: 1px solid #dee2e6;
+        padding: 1rem;
+        .title-page {
+            color: $dark-gray;
+            font-size: 18px;
+        }
+    }
+    .table-btn {
+        .btn {
+            background-color: transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+    .move-img {
+        width: 10px;
+        height: 10px;
+        margin-left: 3px;
+    }
+}
+
+.edit-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
